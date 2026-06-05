@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>HVAC Airbender | Notable Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HVAC Airbender – Dean Hanson notable engineering projects." />
+
+  <!-- Font: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress">
+    <div class="scroll-progress-bar"></div>
+  </div>
+  <!-- Sticky header + nav -->
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-title">HVAC Airbender</span>
+        <span class="brand-subtitle">Dean Hanson</span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">1-pager</a>
+        <a href="projects.html" class="nav-link active">Notable Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Notable Projects -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Notable HVAC Engineering Projects</h2>
+
+        <p class="hero-text hero-text-nowrap">
+          Once expanded, you can see the technical skills are in
+          <span class="text-blue">blue</span>
+          and the intangible translatable skills in
+          <span class="text-gold">goldenrod</span>.
+        </p>
+
+        <div class="portfolio-grid">
+
+          <!-- Lockheed Martin -->
+          <article class="portfolio-card project-card">
+            <div class="project-assets">
+              <!-- Left: Cape Canaveral satellite -->
+              <img src="assets/cape-canaveral-placeholder.jpg" class="project-asset project-asset-wide"
+                alt="Cape Canaveral satellite image" />
+
+              <!-- Middle: Lockheed photo -->
+              <img src="assets/lockheed-photo.png" class="project-asset lockheed-photo"
+                alt="Lockheed Martin project image" />
+
+              <!-- Right: BRPH logo -->
+              <img src="assets/brph-logo.png" class="project-asset project-asset-brph" alt="BRPH logo">
+            </div>
+
+            <h3 class="portfolio-title">Lockheed Martin Hangars – Cape Canaveral, Florida</h3>
+            <p class="project-meta">March 2025 – Present</p>
+
+            <div class="expandable" data-expandable>
+              <p class="portfolio-description">
+                High-stakes HVAC design support for (3) Lockheed Martin facilities at Cape Canaveral, balancing strict
+                client priorities,
+                CCSFS / DoD UFC constraints, evolving technical requirements, and a dense web of stakeholder decisions
+                across design,
+                coordination, and risk management.
+                Construction budgets averaging $10M for each hangar.
+              </p>
+
+              <button class="expand-toggle" type="button" data-expand-toggle aria-expanded="false">
+                Expand
+              </button>
+
+              <!-- First 5 bullets = technical (blue), remaining bullets = non-technical (gold) -->
+              <ul class="project-work-list" data-tech-count="5">
+                <li>Air-cooled CHW hydronic system, split-path AHUs, FCUs, multi-tiered dehumidification controls,
+                  DX-split systems, redundancy design per strict client needs, and aesthetics.</li>
+                <li>C1D2 Group B hazardous vault design.</li>
+                <li>C1D2 Group B hazardous laboratory exhaust and controls design with changing operational information
+                  from the client side.</li>
+                <li>Full UFGS specifications designed per CCSFS Installation Facility Standards, UFC code, and Lockheed
+                  preferences.</li>
+                <li>Fully coordinated 3D model of the building across all internal (architectural, electrical,
+                  structural, interiors, plumbing) and external (fire protection) disciplines.</li>
+
+                <li>Weekly meetings with over a dozen senior professionals on the Lockheed and DoD side, answering easy
+                  and hard questions on my toes when I do and do not have all the answers.</li>
+                <li>Executing and justifying design decisions while strongly considering the client’s design priority
+                  tree, mandates from the CCSFS / DoD UFC side, and conflicting comments from the multi-faceted client
+                  side.</li>
+                <li>Working with the client’s large- and small-scale requests, curiosities, and deep analysis requests
+                  while considering the scope of work contracted for, and wisely navigating hundreds of decisions given
+                  budget and schedule.</li>
+                <li>Making design decisions in deep work bouts without breaking momentum and asking the client and
+                  senior PE—both extremely busy—only when necessary, while also documenting critical RFIs and emails for
+                  key design approvals.</li>
+                <li>Executing limited site visits without the ability to take photos, videos, or make phone calls on
+                  site.</li>
+                <li>Pushing for discipline-specific breakout meetings to catalyze design, limit rework, and define
+                  strong conclusions with both internal and client subject matter experts and decision makers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- SpaceX -->
+          <article class="portfolio-card project-card">
+            <div class="project-assets project-assets-3">
+              <img src="assets/cape-canaveral-placeholder.jpg" class="project-asset project-asset-wide"
+                alt="Cape Canaveral satellite image">
+              <img src="assets/spacex-logo.png" class="project-asset project-asset-logo" alt="SpaceX logo">
+              <img src="assets/brph-logo.png" class="project-asset project-asset-brph" alt="BRPH logo">
+            </div>
+
+            <h3 class="portfolio-title">SpaceX Manufacturing Hangar – Cape Canaveral, Florida</h3>
+            <p class="project-meta">August 2023 – December 2024</p>
+
+            <div class="expandable" data-expandable>
+              <p class="portfolio-description">
+                Working in tight collaboration with SpaceX engineers, architects, and internal teams across
+                high-velocity work packages.
+                Supported HVAC engineering and assisted with proposals, scopes, change orders, planning, and
+                coordination.
+              </p>
+
+              <button class="expand-toggle" type="button" data-expand-toggle aria-expanded="false">
+                Expand
+              </button>
+
+              <ul class="project-work-list" data-tech-count="2">
+                <li>Cascading ISO-class clean room HVAC design.</li>
+                <li>Full HVAC engineering: calculations, equipment selection, Revit, schedules, controls.</li>
+                <li>Collaboration with European engineering firms on 200’ equipment.</li>
+                <li>Phasing, value engineering, and supply-chain alignment.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- L3Harris -->
+          <article class="portfolio-card project-card">
+            <div class="project-assets project-assets-2">
+              <img src="assets/cape-canaveral-placeholder.jpg" class="project-asset project-asset-wide"
+                alt="Cape Canaveral satellite image">
+              <img src="assets/L3Harris-logo.svg" class="project-asset project-asset-logo" alt="L3Harris logo">
+              <img src="assets/brph-logo.png" class="project-asset project-asset-brph" alt="BRPH logo">
+            </div>
+
+            <h3 class="portfolio-title">L3Harris Clean Rooms – Space Coast, Florida</h3>
+            <p class="project-meta">May 2020 – August 2024</p>
+
+            <div class="expandable" data-expandable>
+              <p class="portfolio-description">
+                Designed and executed a cascading ISO-class clean room under difficult existing-facility constraints,
+                coordinating across disciplines and stakeholders.
+              </p>
+
+              <button class="expand-toggle" type="button" data-expand-toggle aria-expanded="false">
+                Expand
+              </button>
+
+              <ul class="project-work-list" data-tech-count="1">
+                <li>Primary HVAC design, controls diagrams, specifications, and 13 major revisions.</li>
+                <li>High-pressure stakeholder communication and technical presentations.</li>
+                <li>ISO 5–8 clean rooms, scrubbers, CHW RTUs, HEPA/ULPA FFUs.</li>
+                <li>Heavy AutoCAD coordination challenges across disciplines.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Patrick Space Force Base (PSFB) -->
+          <article class="portfolio-card project-card">
+            <div class="project-assets">
+              <img src="assets/PSFB-satellite-view.png" class="project-asset project-asset-wide"
+                alt="Patrick Space Force Base satellite view" />
+
+              <img src="assets/PSFB.jpg" class="project-asset project-asset-wide"
+                alt="Patrick Space Force Base Exchange Building" />
+
+              <img src="assets/brph-logo.png" class="project-asset project-asset-brph" alt="BRPH logo">
+            </div>
+
+            <h3 class="portfolio-title">Patrick Space Force Base Exchange Building</h3>
+            <p class="project-meta">September 2024 - March 2025</p>
+
+            <div class="expandable" data-expandable>
+              <p class="portfolio-description">
+                The BX building is the “Walmart” for all humans at PSFB. The building is XX,000 square feet and includes
+                four mechanical rooms,
+                with two mechanical rooms on their own mezzanine level. At the highest design level, the HVAC design
+                consisted of (1) a Towertech composite cooling tower,
+                (2) redundant Trane water-cooled chillers, a Lochinvar natural gas boiler, all necessary hydronics, (3)
+                DOAS units, (10) SZ & MZ VAV AHUs, and all associated controls and appurtenances.
+              </p>
+
+              <button class="expand-toggle" type="button" data-expand-toggle aria-expanded="false">
+                Expand
+              </button>
+
+              <ul class="project-work-list" data-tech-count="6">
+                <li>Central plant + hydronics system integration: condenser water, chilled water, boilers, redundancy
+                  logic and failure-mode thinking.</li>
+                <li>DOAS + AHU architecture: outdoor air strategy, ventilation compliance, zoning, and distribution
+                  across large mixed-use occupancies.</li>
+                <li>Controls sequencing and diagrams: translating plant intent into sequences of operation that
+                  contractors can actually build and commission.</li>
+                <li>Equipment coordination: cooling tower / chiller / boiler / AHU/DOAS selections and the downstream
+                  impacts on piping, power, and footprint.</li>
+                <li>Mechanical room + mezzanine layout: spatial planning for service clearances, access, routing, and
+                  future maintenance reality.</li>
+                <li>Construction-phase support: RFIs, submittal review, and field-driven iteration without losing system
+                  intent.</li>
+                <li>Systems-level prioritization: “eat the elephant” sequencing—solving one subsystem at a time until
+                  the whole building behaves.</li>
+                <li>Calm leadership under pressure: steady presence in meetings and decision moments when scope,
+                  schedule, or expectations get spicy.</li>
+                <li>Cross-discipline communication: aligning architects, owners, controls contractors, and internal
+                  engineering without drowning in noise.</li>
+                <li>Proactive risk radar: asking the questions early that prevent late-stage pain (access, redundancy,
+                  phasing, future flexibility).</li>
+                <li>Documentation clarity: writing narratives/spec/controls language with brevity so the build team can
+                  execute cleanly.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; <span id="year"></span> HVAC Airbender — Dean Hanson</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
