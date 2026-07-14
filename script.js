@@ -134,3 +134,30 @@ window.addEventListener("scroll", () => {
     progressBar.style.width = scrollPercent + "%";
   }
 });
+
+// Soft password gate for the Translatables resume.
+// This is intentionally a simple front-end barrier, not secure authentication.
+function unlockTranslatablesResume() {
+  const correctPasscode = "Evolution";
+
+  // The browser displays its built-in password prompt.
+  const enteredPasscode = window.prompt(
+    "Enter the passcode to unlock the Translatables resume:"
+  );
+
+  // Returning true allows the PDF link to open.
+  if (enteredPasscode === correctPasscode) {
+    return true;
+  }
+
+  // Do nothing when the visitor presses Cancel.
+  if (enteredPasscode === null) {
+    return false;
+  }
+
+  // Tell the visitor when the submitted passcode is incorrect.
+  window.alert("Incorrect passcode.");
+
+  // Returning false prevents the PDF link from opening.
+  return false;
+}
